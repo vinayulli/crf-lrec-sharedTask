@@ -1,0 +1,347 @@
+
+############################################################
+  Processing: EN (DEV)
+############################################################
+Loaded 80 en documents from dev set
+
+Model:       openrouter/openai/gpt-4o
+Language:    en
+Documents:   80
+CoT:         True
+Temperature: 0.0
+Workers:     3
+Par. Ext.:   3
+Optimized:   No
+Few-shot:    No
+
+Running extractors in parallel (batch size=3)...
+
+============================================================
+  Parallel batch: medical_history, vital_signs, lab_values
+============================================================
+
+[1/14] medical_history — extracting from 80 documents (workers=3)...
+
+[2/14] vital_signs — extracting from 80 documents (workers=3)...
+
+[3/14] lab_values — extracting from 80 documents (workers=3)...
+    [vital_signs] [10/80] 0.7 docs/sec, 14s elapsed
+    [lab_values] [10/80] 0.7 docs/sec, 15s elapsed
+    [medical_history] [10/80] 0.5 docs/sec, 21s elapsed
+    [lab_values] [20/80] 0.8 docs/sec, 25s elapsed
+    [vital_signs] [20/80] 0.8 docs/sec, 26s elapsed
+    [vital_signs] [30/80] 0.8 docs/sec, 36s elapsed
+    [lab_values] [30/80] 0.8 docs/sec, 37s elapsed
+    [medical_history] [20/80] 0.5 docs/sec, 37s elapsed
+    [lab_values] [40/80] 0.8 docs/sec, 49s elapsed
+    [vital_signs] [40/80] 0.8 docs/sec, 50s elapsed
+    [medical_history] [30/80] 0.6 docs/sec, 54s elapsed
+    [lab_values] [50/80] 0.8 docs/sec, 64s elapsed
+    [vital_signs] [50/80] 0.7 docs/sec, 67s elapsed
+    [medical_history] [40/80] 0.6 docs/sec, 69s elapsed
+    [lab_values] [60/80] 0.8 docs/sec, 76s elapsed
+    [vital_signs] [60/80] 0.7 docs/sec, 82s elapsed
+    [lab_values] [70/80] 0.8 docs/sec, 87s elapsed
+    [medical_history] [50/80] 0.5 docs/sec, 91s elapsed
+    [vital_signs] [70/80] 0.8 docs/sec, 92s elapsed
+    [lab_values] [80/80] 0.8 docs/sec, 98s elapsed
+    [lab_values] Done: 97.6s
+    [vital_signs] [80/80] 0.7 docs/sec, 108s elapsed
+    [vital_signs] Done: 108.4s
+    [medical_history] [60/80] 0.5 docs/sec, 110s elapsed
+    [medical_history] [70/80] 0.5 docs/sec, 132s elapsed
+    [medical_history] [80/80] 0.5 docs/sec, 149s elapsed
+    [medical_history] Done: 149.5s
+
+============================================================
+  Parallel batch: arterial_blood_gas, imaging_and_diagnostics, current_presentation
+============================================================
+
+[4/14] arterial_blood_gas — extracting from 80 documents (workers=3)...
+
+[5/14] imaging_and_diagnostics — extracting from 80 documents (workers=3)...
+
+[6/14] current_presentation — extracting from 80 documents (workers=3)...
+    [arterial_blood_gas] [10/80] 1.1 docs/sec, 9s elapsed
+    [imaging_and_diagnostics] [10/80] 0.6 docs/sec, 18s elapsed
+    [arterial_blood_gas] [20/80] 1.0 docs/sec, 19s elapsed
+    [current_presentation] [10/80] 0.4 docs/sec, 23s elapsed
+    [arterial_blood_gas] [30/80] 1.2 docs/sec, 26s elapsed
+    [imaging_and_diagnostics] [20/80] 0.7 docs/sec, 31s elapsed
+    [arterial_blood_gas] [40/80] 1.2 docs/sec, 35s elapsed
+    [current_presentation] [20/80] 0.5 docs/sec, 41s elapsed
+    [arterial_blood_gas] [50/80] 1.2 docs/sec, 43s elapsed
+    [imaging_and_diagnostics] [30/80] 0.7 docs/sec, 43s elapsed
+    [arterial_blood_gas] [60/80] 1.2 docs/sec, 50s elapsed
+    [imaging_and_diagnostics] [40/80] 0.7 docs/sec, 55s elapsed
+    [current_presentation] [30/80] 0.5 docs/sec, 56s elapsed
+    [arterial_blood_gas] [70/80] 1.2 docs/sec, 58s elapsed
+    [arterial_blood_gas] [80/80] 1.2 docs/sec, 66s elapsed
+    [arterial_blood_gas] Done: 66.2s
+    [imaging_and_diagnostics] [50/80] 0.7 docs/sec, 67s elapsed
+    [current_presentation] [40/80] 0.6 docs/sec, 69s elapsed
+    [current_presentation] [50/80] 0.6 docs/sec, 81s elapsed
+    [imaging_and_diagnostics] [60/80] 0.7 docs/sec, 83s elapsed
+    [current_presentation] [60/80] 0.6 docs/sec, 94s elapsed
+    [imaging_and_diagnostics] [70/80] 0.7 docs/sec, 98s elapsed
+    [current_presentation] [70/80] 0.7 docs/sec, 106s elapsed
+    [imaging_and_diagnostics] [80/80] 0.7 docs/sec, 114s elapsed
+    [imaging_and_diagnostics] Done: 114.5s
+    [current_presentation] [80/80] 0.7 docs/sec, 121s elapsed
+    [current_presentation] Done: 120.6s
+
+============================================================
+  Parallel batch: acute_diagnoses, treatments, epilepsy_assessment
+============================================================
+
+[7/14] acute_diagnoses — extracting from 80 documents (workers=3)...
+
+[8/14] treatments — extracting from 80 documents (workers=3)...
+
+[9/14] epilepsy_assessment — extracting from 80 documents (workers=3)...
+    [epilepsy_assessment] [10/80] 0.6 docs/sec, 15s elapsed
+    [acute_diagnoses] [10/80] 0.6 docs/sec, 16s elapsed
+    [treatments] [10/80] 0.5 docs/sec, 18s elapsed
+    [epilepsy_assessment] [20/80] 0.8 docs/sec, 26s elapsed
+    [acute_diagnoses] [20/80] 0.7 docs/sec, 28s elapsed
+    [treatments] [20/80] 0.6 docs/sec, 35s elapsed
+    [epilepsy_assessment] [30/80] 0.8 docs/sec, 39s elapsed
+    [acute_diagnoses] [30/80] 0.6 docs/sec, 50s elapsed
+    [epilepsy_assessment] [40/80] 0.8 docs/sec, 51s elapsed
+    [treatments] [30/80] 0.6 docs/sec, 52s elapsed
+    [epilepsy_assessment] [50/80] 0.8 docs/sec, 66s elapsed
+    [acute_diagnoses] [40/80] 0.6 docs/sec, 66s elapsed
+    [treatments] [40/80] 0.6 docs/sec, 67s elapsed
+    [acute_diagnoses] [50/80] 0.6 docs/sec, 80s elapsed
+    [epilepsy_assessment] [60/80] 0.7 docs/sec, 80s elapsed
+    [treatments] [50/80] 0.6 docs/sec, 85s elapsed
+    [epilepsy_assessment] [70/80] 0.7 docs/sec, 95s elapsed
+    [acute_diagnoses] [60/80] 0.6 docs/sec, 97s elapsed
+    [treatments] [60/80] 0.6 docs/sec, 100s elapsed
+    [epilepsy_assessment] [80/80] 0.7 docs/sec, 109s elapsed
+    [epilepsy_assessment] Done: 109.3s
+    [acute_diagnoses] [70/80] 0.6 docs/sec, 114s elapsed
+    [treatments] [70/80] 0.6 docs/sec, 117s elapsed
+    [treatments] [80/80] 0.6 docs/sec, 131s elapsed
+    [treatments] Done: 130.9s
+    [acute_diagnoses] [80/80] 0.6 docs/sec, 131s elapsed
+    [acute_diagnoses] Done: 130.9s
+
+============================================================
+  Parallel batch: syncope_assessment, infection_screening, social_context
+============================================================
+
+[10/14] syncope_assessment — extracting from 80 documents (workers=3)...
+
+[11/14] infection_screening — extracting from 80 documents (workers=3)...
+
+[12/14] social_context — extracting from 80 documents (workers=3)...
+    [social_context] [10/80] 0.9 docs/sec, 11s elapsed
+    [infection_screening] [10/80] 0.8 docs/sec, 12s elapsed
+    [syncope_assessment] [10/80] 0.7 docs/sec, 14s elapsed
+    [social_context] [20/80] 1.0 docs/sec, 20s elapsed
+    [infection_screening] [20/80] 0.9 docs/sec, 22s elapsed
+    [syncope_assessment] [20/80] 0.8 docs/sec, 25s elapsed
+    [social_context] [30/80] 1.0 docs/sec, 30s elapsed
+    [infection_screening] [30/80] 1.0 docs/sec, 31s elapsed
+    [syncope_assessment] [30/80] 0.8 docs/sec, 37s elapsed
+    [social_context] [40/80] 1.0 docs/sec, 41s elapsed
+    [infection_screening] [40/80] 1.0 docs/sec, 42s elapsed
+    [syncope_assessment] [40/80] 0.8 docs/sec, 50s elapsed
+    [social_context] [50/80] 1.0 docs/sec, 52s elapsed
+    [infection_screening] [50/80] 0.9 docs/sec, 54s elapsed
+    [syncope_assessment] [50/80] 0.8 docs/sec, 64s elapsed
+    [social_context] [60/80] 0.9 docs/sec, 65s elapsed
+    [infection_screening] [60/80] 0.9 docs/sec, 66s elapsed
+    [social_context] [70/80] 0.9 docs/sec, 77s elapsed
+    [infection_screening] [70/80] 0.9 docs/sec, 78s elapsed
+    [syncope_assessment] [60/80] 0.7 docs/sec, 82s elapsed
+    [infection_screening] [80/80] 0.9 docs/sec, 91s elapsed
+    [infection_screening] Done: 90.6s
+    [social_context] [80/80] 0.9 docs/sec, 91s elapsed
+    [social_context] Done: 91.5s
+    [syncope_assessment] [70/80] 0.7 docs/sec, 98s elapsed
+    [syncope_assessment] [80/80] 0.7 docs/sec, 110s elapsed
+    [syncope_assessment] Done: 110.3s
+
+============================================================
+  Parallel batch: devices, outcome
+============================================================
+
+[13/14] devices — extracting from 80 documents (workers=3)...
+
+[14/14] outcome — extracting from 80 documents (workers=3)...
+    [devices] ERROR doc 1258026_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [outcome] ERROR doc 1236585_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [devices] ERROR doc 1307609_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [outcome] ERROR doc 1307609_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [devices] ERROR doc 1323348_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [outcome] ERROR doc 1258026_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [devices] ERROR doc 1323973_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [outcome] ERROR doc 1323348_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [devices] ERROR doc 1350262_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [outcome] ERROR doc 1323973_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [devices] ERROR doc 1486650_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [outcome] ERROR doc 1350262_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [devices] ERROR doc 1498690_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [outcome] ERROR doc 1486650_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [devices] ERROR doc 1526466_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [outcome] ERROR doc 1498690_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [outcome] ERROR doc 1526466_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [devices] ERROR doc 15455_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [devices] ERROR doc 1565152_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [outcome] ERROR doc 15455_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [devices] ERROR doc 1706077_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [outcome] ERROR doc 1565152_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [outcome] ERROR doc 1706077_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [devices] ERROR doc 1769015_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 2660. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_30BDP1h6iaZRnKJnqABYOdqEL53"}
+    [devices] ERROR doc 1777967_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1769015_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1803820_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1777967_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1803820_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1833659_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 243838_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1833659_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 333752_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 333752_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 243838_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 382962_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 419929_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 382962_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 530889_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 419929_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 530889_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 548625_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 548625_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 572916_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 597775_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 572916_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 597775_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 606486_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 606486_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 614605_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 627570_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 614605_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 627570_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 63875_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 63875_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 643686_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 646228_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 643686_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 646228_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 646639_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 667544_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 646639_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 681196_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 667544_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 681196_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 709578_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 769230_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 709578_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 772892_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 769230_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 772892_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 785051_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 787885_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 785051_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 821011_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 787885_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 821011_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 854863_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 893897_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 854863_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 94439_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 893897_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 94439_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 947751_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 987763_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 947751_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1015214_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 987763_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1015214_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1091594_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1175847_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1091594_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1195735_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1175847_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1195735_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1217595_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1222948_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1217595_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1262429_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1262429_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1222948_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1288360_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1396734_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1288360_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 152391_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1396734_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 152391_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1594790_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 16252_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1594790_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 1782578_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 16252_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 1782578_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 201466_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 308937_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 201466_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 327261_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 308937_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 327261_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 382521_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 385573_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 382521_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 394397_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 394397_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 385573_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 432071_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 575432_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 432071_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 577768_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 575432_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 577768_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 637941_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 688349_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 637941_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 718917_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 688349_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 718917_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 762685_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 815427_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 762685_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 866005_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 815427_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 866005_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 914210_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] ERROR doc 94664_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [devices] Done: 164.3s (73 errors)
+    [outcome] ERROR doc 914210_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] ERROR doc 94664_en: litellm.APIError: APIError: OpenrouterException - {"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}
+    [outcome] Done: 166.0s (74 errors)
+
+============================================================
+  Extraction complete!
+  Total calls: 1120
+  Total errors: 147
+  Total time: 677.2s (11.3 min)
+  Checkpoint: C:\Users\ulliv\Desktop\vinay\code\crf\checkpoints\checkpoint_openrouter_openai_gpt-4o_en.json
+============================================================
+Submission saved: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\submission_openrouter_openai_gpt-4o_en.jsonl
+  Documents: 80
+  Items per doc: 134
+
+============================================================
+  SCORING
+  Submission: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\submission_openrouter_openai_gpt-4o_en.jsonl
+  Ground truth: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\dev_gt_en.jsonl
+  Language: en
+============================================================
+  Reference docs: 80
+  Submission docs: 80
+TP: 329, FP: 255, FN: 53
+
+  *** Macro-F1 = 0.6898 (68.98%) ***
+
+  Score saved: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\scores\submission_openrouter_openai_gpt-4o_en_scores.json

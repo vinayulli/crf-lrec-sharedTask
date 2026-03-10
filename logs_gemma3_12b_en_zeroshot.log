@@ -1,0 +1,243 @@
+
+############################################################
+  Processing: EN (DEV)
+############################################################
+Loaded 80 en documents from dev set
+
+Model:       openrouter/google/gemma-3-12b-it
+Language:    en
+Documents:   80
+CoT:         True
+Temperature: 0.0
+Workers:     3
+Par. Ext.:   3
+Optimized:   No
+Few-shot:    No
+
+Running extractors in parallel (batch size=3)...
+
+============================================================
+  Parallel batch: medical_history, vital_signs, lab_values
+============================================================
+
+[1/14] medical_history — extracting from 80 documents (workers=3)...
+
+[2/14] vital_signs — extracting from 80 documents (workers=3)...
+
+[3/14] lab_values — extracting from 80 documents (workers=3)...
+    [vital_signs] [10/80] 0.4 docs/sec, 24s elapsed
+    [lab_values] [10/80] 0.4 docs/sec, 28s elapsed
+    [medical_history] [10/80] 0.3 docs/sec, 37s elapsed
+    [vital_signs] [20/80] 0.5 docs/sec, 38s elapsed
+    [lab_values] [20/80] 0.4 docs/sec, 51s elapsed
+    [vital_signs] [30/80] 0.6 docs/sec, 51s elapsed
+    [vital_signs] [40/80] 0.6 docs/sec, 68s elapsed
+    [lab_values] [30/80] 0.4 docs/sec, 72s elapsed
+    [medical_history] [20/80] 0.3 docs/sec, 78s elapsed
+    [vital_signs] [50/80] 0.6 docs/sec, 87s elapsed
+    [lab_values] [40/80] 0.4 docs/sec, 96s elapsed
+    [vital_signs] [60/80] 0.6 docs/sec, 103s elapsed
+    [medical_history] [30/80] 0.3 docs/sec, 110s elapsed
+    [lab_values] [50/80] 0.4 docs/sec, 118s elapsed
+    [vital_signs] [70/80] 0.6 docs/sec, 118s elapsed
+    [vital_signs] [80/80] 0.6 docs/sec, 143s elapsed
+    [vital_signs] Done: 143.3s
+    [lab_values] [60/80] 0.4 docs/sec, 143s elapsed
+    [medical_history] [40/80] 0.3 docs/sec, 149s elapsed
+    [lab_values] [70/80] 0.4 docs/sec, 166s elapsed
+    [lab_values] [80/80] 0.4 docs/sec, 193s elapsed
+    [lab_values] Done: 192.8s
+    [medical_history] [50/80] 0.3 docs/sec, 196s elapsed
+    [medical_history] [60/80] 0.3 docs/sec, 233s elapsed
+    [medical_history] [70/80] 0.3 docs/sec, 259s elapsed
+    [medical_history] [80/80] 0.3 docs/sec, 293s elapsed
+    [medical_history] Done: 293.2s
+
+============================================================
+  Parallel batch: arterial_blood_gas, imaging_and_diagnostics, current_presentation
+============================================================
+
+[4/14] arterial_blood_gas — extracting from 80 documents (workers=3)...
+
+[5/14] imaging_and_diagnostics — extracting from 80 documents (workers=3)...
+
+[6/14] current_presentation — extracting from 80 documents (workers=3)...
+    [arterial_blood_gas] [10/80] 0.7 docs/sec, 14s elapsed
+    [arterial_blood_gas] ERROR doc 1323348_en: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [arterial_blood_gas] ERROR doc 1486650_en: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [arterial_blood_gas] ERROR doc 1526466_en: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [arterial_blood_gas] [20/80] 0.8 docs/sec, 25s elapsed
+    [current_presentation] [10/80] 0.4 docs/sec, 26s elapsed
+    [imaging_and_diagnostics] [10/80] 0.4 docs/sec, 26s elapsed
+    [arterial_blood_gas] ERROR doc 530889_en: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [arterial_blood_gas] ERROR doc 572916_en: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [arterial_blood_gas] [40/80] 0.9 docs/sec, 44s elapsed
+    [imaging_and_diagnostics] [20/80] 0.4 docs/sec, 50s elapsed
+    [current_presentation] [20/80] 0.4 docs/sec, 51s elapsed
+    [arterial_blood_gas] ERROR doc 854863_en: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [arterial_blood_gas] [50/80] 0.9 docs/sec, 55s elapsed
+    [arterial_blood_gas] [60/80] 0.9 docs/sec, 63s elapsed
+    [current_presentation] [30/80] 0.4 docs/sec, 70s elapsed
+    [arterial_blood_gas] [70/80] 1.0 docs/sec, 71s elapsed
+    [imaging_and_diagnostics] [30/80] 0.4 docs/sec, 73s elapsed
+    [arterial_blood_gas] [80/80] 1.0 docs/sec, 80s elapsed
+    [arterial_blood_gas] Done: 80.0s (6 errors)
+    [current_presentation] [40/80] 0.5 docs/sec, 89s elapsed
+    [imaging_and_diagnostics] [40/80] 0.4 docs/sec, 93s elapsed
+    [current_presentation] [50/80] 0.5 docs/sec, 110s elapsed
+    [imaging_and_diagnostics] [50/80] 0.4 docs/sec, 116s elapsed
+    [current_presentation] [60/80] 0.5 docs/sec, 131s elapsed
+    [imaging_and_diagnostics] [60/80] 0.4 docs/sec, 138s elapsed
+    [current_presentation] [70/80] 0.5 docs/sec, 149s elapsed
+    [imaging_and_diagnostics] [70/80] 0.4 docs/sec, 162s elapsed
+    [current_presentation] [80/80] 0.5 docs/sec, 172s elapsed
+    [current_presentation] Done: 172.3s
+    [imaging_and_diagnostics] [80/80] 0.4 docs/sec, 183s elapsed
+    [imaging_and_diagnostics] Done: 183.0s
+
+============================================================
+  Parallel batch: acute_diagnoses, treatments, epilepsy_assessment
+============================================================
+
+[7/14] acute_diagnoses — extracting from 80 documents (workers=3)...
+
+[8/14] treatments — extracting from 80 documents (workers=3)...
+
+[9/14] epilepsy_assessment — extracting from 80 documents (workers=3)...
+    [epilepsy_assessment] [10/80] 0.4 docs/sec, 23s elapsed
+    [acute_diagnoses] [10/80] 0.4 docs/sec, 27s elapsed
+    [treatments] [10/80] 0.3 docs/sec, 30s elapsed
+    [epilepsy_assessment] [20/80] 0.5 docs/sec, 41s elapsed
+    [acute_diagnoses] [20/80] 0.4 docs/sec, 49s elapsed
+    [treatments] [20/80] 0.4 docs/sec, 50s elapsed
+    [epilepsy_assessment] [30/80] 0.5 docs/sec, 58s elapsed
+    [treatments] [30/80] 0.4 docs/sec, 74s elapsed
+    [acute_diagnoses] [30/80] 0.4 docs/sec, 74s elapsed
+    [epilepsy_assessment] [40/80] 0.5 docs/sec, 78s elapsed
+    [epilepsy_assessment] [50/80] 0.5 docs/sec, 95s elapsed
+    [acute_diagnoses] [40/80] 0.4 docs/sec, 96s elapsed
+    [treatments] [40/80] 0.4 docs/sec, 101s elapsed
+    [epilepsy_assessment] [60/80] 0.5 docs/sec, 115s elapsed
+    [acute_diagnoses] [50/80] 0.4 docs/sec, 119s elapsed
+    [treatments] [50/80] 0.4 docs/sec, 126s elapsed
+    [epilepsy_assessment] [70/80] 0.5 docs/sec, 130s elapsed
+    [acute_diagnoses] [60/80] 0.4 docs/sec, 152s elapsed
+    [treatments] [60/80] 0.4 docs/sec, 152s elapsed
+    [epilepsy_assessment] [80/80] 0.5 docs/sec, 156s elapsed
+    [epilepsy_assessment] Done: 156.4s
+    [acute_diagnoses] [70/80] 0.4 docs/sec, 191s elapsed
+    [treatments] [70/80] 0.4 docs/sec, 193s elapsed
+    [acute_diagnoses] [80/80] 0.4 docs/sec, 226s elapsed
+    [acute_diagnoses] Done: 225.6s
+    [treatments] [80/80] 0.3 docs/sec, 236s elapsed
+    [treatments] Done: 235.8s
+
+============================================================
+  Parallel batch: syncope_assessment, infection_screening, social_context
+============================================================
+
+[10/14] syncope_assessment — extracting from 80 documents (workers=3)...
+
+[11/14] infection_screening — extracting from 80 documents (workers=3)...
+
+[12/14] social_context — extracting from 80 documents (workers=3)...
+    [infection_screening] [10/80] 0.6 docs/sec, 17s elapsed
+    [social_context] [10/80] 0.6 docs/sec, 18s elapsed
+    [syncope_assessment] [10/80] 0.4 docs/sec, 25s elapsed
+    [infection_screening] ERROR doc 1486650_en: 3 validation errors for InfectionScreening
+influenza_and_infections
+  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='None', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+sars_cov2_swab_test
+  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='None', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+neurologist_consultation
+  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='None', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+    [infection_screening] [20/80] 0.7 docs/sec, 30s elapsed
+    [social_context] [20/80] 0.7 docs/sec, 30s elapsed
+    [social_context] [30/80] 0.7 docs/sec, 40s elapsed
+    [syncope_assessment] [20/80] 0.5 docs/sec, 41s elapsed
+    [infection_screening] [30/80] 0.7 docs/sec, 42s elapsed
+    [social_context] [40/80] 0.7 docs/sec, 55s elapsed
+    [infection_screening] [40/80] 0.7 docs/sec, 55s elapsed
+    [syncope_assessment] [30/80] 0.5 docs/sec, 64s elapsed
+    [social_context] [50/80] 0.7 docs/sec, 72s elapsed
+    [infection_screening] [50/80] 0.7 docs/sec, 73s elapsed
+    [social_context] [60/80] 0.7 docs/sec, 84s elapsed
+    [infection_screening] [60/80] 0.7 docs/sec, 86s elapsed
+    [syncope_assessment] [40/80] 0.5 docs/sec, 86s elapsed
+    [social_context] [70/80] 0.7 docs/sec, 95s elapsed
+    [infection_screening] [70/80] 0.7 docs/sec, 97s elapsed
+    [syncope_assessment] [50/80] 0.5 docs/sec, 102s elapsed
+    [social_context] [80/80] 0.7 docs/sec, 107s elapsed
+    [social_context] Done: 107.5s
+    [infection_screening] [80/80] 0.7 docs/sec, 114s elapsed
+    [infection_screening] Done: 113.8s (1 errors)
+    [syncope_assessment] [60/80] 0.5 docs/sec, 130s elapsed
+    [syncope_assessment] [70/80] 0.4 docs/sec, 159s elapsed
+    [syncope_assessment] [80/80] 0.4 docs/sec, 186s elapsed
+    [syncope_assessment] Done: 185.6s
+
+============================================================
+  Parallel batch: devices, outcome
+============================================================
+
+[13/14] devices — extracting from 80 documents (workers=3)...
+
+[14/14] outcome — extracting from 80 documents (workers=3)...
+    [devices] [10/80] 0.9 docs/sec, 11s elapsed
+    [outcome] [10/80] 0.7 docs/sec, 14s elapsed
+    [devices] [20/80] 0.9 docs/sec, 21s elapsed
+    [outcome] [20/80] 0.8 docs/sec, 25s elapsed
+    [devices] [30/80] 0.9 docs/sec, 33s elapsed
+    [outcome] [30/80] 0.9 docs/sec, 35s elapsed
+    [devices] [40/80] 0.9 docs/sec, 43s elapsed
+    [outcome] [40/80] 0.9 docs/sec, 47s elapsed
+    [devices] [50/80] 1.0 docs/sec, 52s elapsed
+    [outcome] [50/80] 0.9 docs/sec, 56s elapsed
+    [devices] [60/80] 1.0 docs/sec, 62s elapsed
+    [outcome] [60/80] 0.9 docs/sec, 69s elapsed
+    [devices] [70/80] 1.0 docs/sec, 71s elapsed
+    [outcome] [70/80] 0.9 docs/sec, 79s elapsed
+    [devices] [80/80] 1.0 docs/sec, 82s elapsed
+    [devices] Done: 81.8s
+    [outcome] [80/80] 0.9 docs/sec, 90s elapsed
+    [outcome] Done: 90.3s
+
+============================================================
+  Extraction complete!
+  Total calls: 1120
+  Total errors: 7
+  Total time: 987.9s (16.5 min)
+  Checkpoint: C:\Users\ulliv\Desktop\vinay\code\crf\checkpoints\checkpoint_openrouter_google_gemma-3-12b-it_en.json
+============================================================
+Submission saved: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\submission_openrouter_google_gemma-3-12b-it_en.jsonl
+  Documents: 80
+  Items per doc: 134
+
+============================================================
+  SCORING
+  Submission: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\submission_openrouter_google_gemma-3-12b-it_en.jsonl
+  Ground truth: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\dev_gt_en.jsonl
+  Language: en
+============================================================
+  Reference docs: 80
+  Submission docs: 80
+TP: 315, FP: 379, FN: 50
+
+  *** Macro-F1 = 0.6284 (62.84%) ***
+
+  Score saved: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\scores\submission_openrouter_google_gemma-3-12b-it_en_scores.json

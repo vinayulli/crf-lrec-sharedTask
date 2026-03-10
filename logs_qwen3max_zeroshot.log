@@ -1,0 +1,18 @@
+
+############################################################
+  Processing: EN (DEV)
+############################################################
+Loaded 80 en documents from dev set
+
+Model:       openrouter/qwen/qwen3-max
+Language:    en
+Documents:   80
+CoT:         True
+Temperature: 0.0
+Workers:     1
+Par. Ext.:   1
+Optimized:   No
+Few-shot:    No
+Note:        Disabled native thinking for JSON mode compatibility
+
+[1/14] medical_history — extracting from 80 documents (workers=1)...

@@ -1,0 +1,218 @@
+
+############################################################
+  Processing: EN (DEV)
+############################################################
+Loaded 80 en documents from dev set
+
+Model:       openrouter/qwen/qwen3-8b
+Language:    en
+Documents:   80
+CoT:         True
+Temperature: 0.0
+Workers:     3
+Par. Ext.:   3
+Optimized:   No
+Few-shot:    No
+Note:        Disabled native thinking for JSON mode compatibility
+
+Running extractors in parallel (batch size=3)...
+
+============================================================
+  Parallel batch: medical_history, vital_signs, lab_values
+============================================================
+
+[1/14] medical_history — extracting from 80 documents (workers=3)...
+
+[2/14] vital_signs — extracting from 80 documents (workers=3)...
+
+[3/14] lab_values — extracting from 80 documents (workers=3)...
+    [lab_values] [10/80] 0.2 docs/sec, 40s elapsed
+    [vital_signs] [10/80] 0.2 docs/sec, 47s elapsed
+    [lab_values] [20/80] 0.3 docs/sec, 77s elapsed
+    [medical_history] [10/80] 0.1 docs/sec, 81s elapsed
+    [vital_signs] [20/80] 0.2 docs/sec, 87s elapsed
+    [lab_values] [30/80] 0.3 docs/sec, 111s elapsed
+    [vital_signs] [30/80] 0.3 docs/sec, 114s elapsed
+    [lab_values] [40/80] 0.3 docs/sec, 141s elapsed
+    [medical_history] [20/80] 0.1 docs/sec, 143s elapsed
+    [vital_signs] [40/80] 0.2 docs/sec, 172s elapsed
+    [lab_values] [50/80] 0.3 docs/sec, 176s elapsed
+    [vital_signs] [50/80] 0.2 docs/sec, 211s elapsed
+    [medical_history] [30/80] 0.1 docs/sec, 218s elapsed
+    [lab_values] [60/80] 0.3 docs/sec, 222s elapsed
+    [lab_values] [70/80] 0.3 docs/sec, 253s elapsed
+    [vital_signs] [60/80] 0.2 docs/sec, 253s elapsed
+    [medical_history] [40/80] 0.1 docs/sec, 289s elapsed
+    [lab_values] [80/80] 0.3 docs/sec, 297s elapsed
+    [lab_values] Done: 296.8s
+    [vital_signs] [70/80] 0.2 docs/sec, 299s elapsed
+    [vital_signs] [80/80] 0.2 docs/sec, 344s elapsed
+    [vital_signs] Done: 344.2s
+    [medical_history] [50/80] 0.1 docs/sec, 364s elapsed
+    [medical_history] [60/80] 0.1 docs/sec, 446s elapsed
+    [medical_history] [70/80] 0.1 docs/sec, 524s elapsed
+    [medical_history] [80/80] 0.1 docs/sec, 590s elapsed
+    [medical_history] Done: 590.0s
+
+============================================================
+  Parallel batch: arterial_blood_gas, imaging_and_diagnostics, current_presentation
+============================================================
+
+[4/14] arterial_blood_gas — extracting from 80 documents (workers=3)...
+
+[5/14] imaging_and_diagnostics — extracting from 80 documents (workers=3)...
+
+[6/14] current_presentation — extracting from 80 documents (workers=3)...
+    [arterial_blood_gas] [10/80] 0.4 docs/sec, 27s elapsed
+    [imaging_and_diagnostics] [10/80] 0.3 docs/sec, 37s elapsed
+    [arterial_blood_gas] [20/80] 0.4 docs/sec, 49s elapsed
+    [current_presentation] [10/80] 0.2 docs/sec, 61s elapsed
+    [arterial_blood_gas] [30/80] 0.4 docs/sec, 74s elapsed
+    [imaging_and_diagnostics] [20/80] 0.2 docs/sec, 85s elapsed
+    [arterial_blood_gas] [40/80] 0.4 docs/sec, 96s elapsed
+    [current_presentation] [20/80] 0.2 docs/sec, 112s elapsed
+    [imaging_and_diagnostics] [30/80] 0.3 docs/sec, 118s elapsed
+    [arterial_blood_gas] [50/80] 0.4 docs/sec, 124s elapsed
+    [arterial_blood_gas] [60/80] 0.4 docs/sec, 147s elapsed
+    [current_presentation] [30/80] 0.2 docs/sec, 158s elapsed
+    [imaging_and_diagnostics] [40/80] 0.2 docs/sec, 163s elapsed
+    [arterial_blood_gas] [70/80] 0.4 docs/sec, 178s elapsed
+    [imaging_and_diagnostics] [50/80] 0.2 docs/sec, 203s elapsed
+    [arterial_blood_gas] [80/80] 0.4 docs/sec, 209s elapsed
+    [arterial_blood_gas] Done: 209.3s
+    [current_presentation] [40/80] 0.2 docs/sec, 215s elapsed
+    [imaging_and_diagnostics] [60/80] 0.3 docs/sec, 237s elapsed
+    [current_presentation] [50/80] 0.2 docs/sec, 274s elapsed
+    [imaging_and_diagnostics] [70/80] 0.2 docs/sec, 286s elapsed
+    [current_presentation] [60/80] 0.2 docs/sec, 318s elapsed
+    [imaging_and_diagnostics] [80/80] 0.2 docs/sec, 327s elapsed
+    [imaging_and_diagnostics] Done: 326.7s
+    [current_presentation] [70/80] 0.2 docs/sec, 369s elapsed
+    [current_presentation] [80/80] 0.2 docs/sec, 430s elapsed
+    [current_presentation] Done: 429.8s
+
+============================================================
+  Parallel batch: acute_diagnoses, treatments, epilepsy_assessment
+============================================================
+
+[7/14] acute_diagnoses — extracting from 80 documents (workers=3)...
+
+[8/14] treatments — extracting from 80 documents (workers=3)...
+
+[9/14] epilepsy_assessment — extracting from 80 documents (workers=3)...
+    [epilepsy_assessment] [10/80] 0.3 docs/sec, 30s elapsed
+    [treatments] [10/80] 0.2 docs/sec, 53s elapsed
+    [acute_diagnoses] [10/80] 0.2 docs/sec, 57s elapsed
+    [epilepsy_assessment] [20/80] 0.3 docs/sec, 58s elapsed
+    [epilepsy_assessment] [30/80] 0.3 docs/sec, 89s elapsed
+    [treatments] [20/80] 0.2 docs/sec, 104s elapsed
+    [acute_diagnoses] [20/80] 0.2 docs/sec, 105s elapsed
+    [epilepsy_assessment] [40/80] 0.3 docs/sec, 118s elapsed
+    [acute_diagnoses] [30/80] 0.2 docs/sec, 151s elapsed
+    [epilepsy_assessment] [50/80] 0.3 docs/sec, 152s elapsed
+    [treatments] [30/80] 0.2 docs/sec, 156s elapsed
+    [epilepsy_assessment] [60/80] 0.3 docs/sec, 184s elapsed
+    [acute_diagnoses] [40/80] 0.2 docs/sec, 202s elapsed
+    [treatments] [40/80] 0.2 docs/sec, 202s elapsed
+    [epilepsy_assessment] [70/80] 0.3 docs/sec, 216s elapsed
+    [epilepsy_assessment] [80/80] 0.3 docs/sec, 248s elapsed
+    [epilepsy_assessment] Done: 247.9s
+    [acute_diagnoses] [50/80] 0.2 docs/sec, 261s elapsed
+    [treatments] [50/80] 0.2 docs/sec, 266s elapsed
+    [acute_diagnoses] [60/80] 0.2 docs/sec, 319s elapsed
+    [treatments] [60/80] 0.2 docs/sec, 320s elapsed
+    [acute_diagnoses] [70/80] 0.2 docs/sec, 372s elapsed
+    [treatments] [70/80] 0.2 docs/sec, 404s elapsed
+    [acute_diagnoses] [80/80] 0.2 docs/sec, 430s elapsed
+    [acute_diagnoses] Done: 429.8s
+    [treatments] [80/80] 0.1 docs/sec, 568s elapsed
+    [treatments] Done: 567.9s
+
+============================================================
+  Parallel batch: syncope_assessment, infection_screening, social_context
+============================================================
+
+[10/14] syncope_assessment — extracting from 80 documents (workers=3)...
+
+[11/14] infection_screening — extracting from 80 documents (workers=3)...
+
+[12/14] social_context — extracting from 80 documents (workers=3)...
+    [social_context] [10/80] 0.3 docs/sec, 32s elapsed
+    [infection_screening] [10/80] 0.3 docs/sec, 35s elapsed
+    [syncope_assessment] [10/80] 0.3 docs/sec, 38s elapsed
+    [social_context] [20/80] 0.3 docs/sec, 63s elapsed
+    [syncope_assessment] [20/80] 0.3 docs/sec, 66s elapsed
+    [infection_screening] [20/80] 0.3 docs/sec, 75s elapsed
+    [social_context] [30/80] 0.3 docs/sec, 91s elapsed
+    [syncope_assessment] [30/80] 0.3 docs/sec, 108s elapsed
+    [infection_screening] [30/80] 0.3 docs/sec, 115s elapsed
+    [social_context] [40/80] 0.3 docs/sec, 119s elapsed
+    [syncope_assessment] [40/80] 0.3 docs/sec, 140s elapsed
+    [infection_screening] [40/80] 0.3 docs/sec, 144s elapsed
+    [social_context] [50/80] 0.3 docs/sec, 153s elapsed
+    [syncope_assessment] [50/80] 0.3 docs/sec, 173s elapsed
+    [social_context] [60/80] 0.3 docs/sec, 195s elapsed
+    [infection_screening] [50/80] 0.3 docs/sec, 195s elapsed
+    [syncope_assessment] [60/80] 0.3 docs/sec, 203s elapsed
+    [infection_screening] [60/80] 0.3 docs/sec, 223s elapsed
+    [social_context] [70/80] 0.3 docs/sec, 228s elapsed
+    [syncope_assessment] [70/80] 0.3 docs/sec, 240s elapsed
+    [infection_screening] [70/80] 0.3 docs/sec, 250s elapsed
+    [social_context] ERROR doc 772892_en: 'NoneType' object has no attribute 'model_dump'
+    [social_context] [80/80] 0.3 docs/sec, 254s elapsed
+    [social_context] Done: 254.4s (1 errors)
+    [syncope_assessment] [80/80] 0.3 docs/sec, 267s elapsed
+    [syncope_assessment] Done: 266.9s
+    [infection_screening] [80/80] 0.3 docs/sec, 285s elapsed
+    [infection_screening] Done: 285.4s
+
+============================================================
+  Parallel batch: devices, outcome
+============================================================
+
+[13/14] devices — extracting from 80 documents (workers=3)...
+
+[14/14] outcome — extracting from 80 documents (workers=3)...
+    [devices] [10/80] 0.5 docs/sec, 20s elapsed
+    [outcome] [10/80] 0.4 docs/sec, 24s elapsed
+    [devices] [20/80] 0.4 docs/sec, 45s elapsed
+    [outcome] [20/80] 0.4 docs/sec, 48s elapsed
+    [devices] [30/80] 0.5 docs/sec, 63s elapsed
+    [outcome] [30/80] 0.4 docs/sec, 71s elapsed
+    [devices] [40/80] 0.5 docs/sec, 87s elapsed
+    [outcome] [40/80] 0.4 docs/sec, 92s elapsed
+    [devices] [50/80] 0.4 docs/sec, 115s elapsed
+    [outcome] [50/80] 0.4 docs/sec, 116s elapsed
+    [devices] [60/80] 0.4 docs/sec, 137s elapsed
+    [outcome] [60/80] 0.4 docs/sec, 145s elapsed
+    [devices] [70/80] 0.5 docs/sec, 155s elapsed
+    [outcome] [70/80] 0.4 docs/sec, 172s elapsed
+    [devices] [80/80] 0.5 docs/sec, 175s elapsed
+    [devices] Done: 175.2s
+    [outcome] [80/80] 0.4 docs/sec, 191s elapsed
+    [outcome] Done: 191.5s
+
+============================================================
+  Extraction complete!
+  Total calls: 1120
+  Total errors: 1
+  Total time: 2064.6s (34.4 min)
+  Checkpoint: C:\Users\ulliv\Desktop\vinay\code\crf\checkpoints\checkpoint_openrouter_qwen_qwen3-8b_en.json
+============================================================
+Submission saved: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\submission_openrouter_qwen_qwen3-8b_en.jsonl
+  Documents: 80
+  Items per doc: 134
+
+============================================================
+  SCORING
+  Submission: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\submission_openrouter_qwen_qwen3-8b_en.jsonl
+  Ground truth: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\dev_gt_en.jsonl
+  Language: en
+============================================================
+  Reference docs: 80
+  Submission docs: 80
+TP: 326, FP: 299, FN: 51
+
+  *** Macro-F1 = 0.6746 (67.46%) ***
+
+  Score saved: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\scores\submission_openrouter_qwen_qwen3-8b_en_scores.json

@@ -1,0 +1,256 @@
+
+############################################################
+  Processing: IT (DEV)
+############################################################
+Loaded 80 it documents from dev set
+
+Model:       openrouter/google/gemma-3-12b-it
+Language:    it
+Documents:   80
+CoT:         True
+Temperature: 0.0
+Workers:     3
+Par. Ext.:   3
+Optimized:   No
+Few-shot:    No
+
+Running extractors in parallel (batch size=3)...
+
+============================================================
+  Parallel batch: medical_history, vital_signs, lab_values
+============================================================
+
+[1/14] medical_history — extracting from 80 documents (workers=3)...
+
+[2/14] vital_signs — extracting from 80 documents (workers=3)...
+
+[3/14] lab_values — extracting from 80 documents (workers=3)...
+    [vital_signs] [10/80] 0.4 docs/sec, 23s elapsed
+    [lab_values] [10/80] 0.4 docs/sec, 28s elapsed
+    [vital_signs] [20/80] 0.5 docs/sec, 38s elapsed
+    [medical_history] [10/80] 0.3 docs/sec, 39s elapsed
+    [lab_values] [20/80] 0.4 docs/sec, 49s elapsed
+    [vital_signs] [30/80] 0.5 docs/sec, 55s elapsed
+    [medical_history] [20/80] 0.3 docs/sec, 71s elapsed
+    [lab_values] [30/80] 0.4 docs/sec, 73s elapsed
+    [vital_signs] [40/80] 0.5 docs/sec, 73s elapsed
+    [vital_signs] [50/80] 0.6 docs/sec, 90s elapsed
+    [lab_values] [40/80] 0.4 docs/sec, 95s elapsed
+    [medical_history] [30/80] 0.3 docs/sec, 105s elapsed
+    [vital_signs] [60/80] 0.6 docs/sec, 106s elapsed
+    [medical_history] ERROR doc 572916_it: 1 validation error for MedicalHistory
+chronic_renal_failure
+  Input should be 'certainly chronic', 'possibly chronic' or 'certainly not chronic' [type=enum, input_value=True, input_type=bool]
+    For further information visit https://errors.pydantic.dev/2.12/v/enum
+    [lab_values] [50/80] 0.4 docs/sec, 117s elapsed
+    [vital_signs] [70/80] 0.6 docs/sec, 118s elapsed
+    [medical_history] [40/80] 0.3 docs/sec, 144s elapsed
+    [lab_values] [60/80] 0.4 docs/sec, 145s elapsed
+    [vital_signs] [80/80] 0.5 docs/sec, 146s elapsed
+    [vital_signs] Done: 146.0s
+    [lab_values] [70/80] 0.4 docs/sec, 167s elapsed
+    [medical_history] [50/80] 0.3 docs/sec, 186s elapsed
+    [lab_values] [80/80] 0.4 docs/sec, 196s elapsed
+    [lab_values] Done: 196.4s
+    [medical_history] [60/80] 0.3 docs/sec, 225s elapsed
+    [medical_history] [70/80] 0.3 docs/sec, 251s elapsed
+    [medical_history] [80/80] 0.3 docs/sec, 288s elapsed
+    [medical_history] Done: 287.6s (1 errors)
+
+============================================================
+  Parallel batch: arterial_blood_gas, imaging_and_diagnostics, current_presentation
+============================================================
+
+[4/14] arterial_blood_gas — extracting from 80 documents (workers=3)...
+
+[5/14] imaging_and_diagnostics — extracting from 80 documents (workers=3)...
+
+[6/14] current_presentation — extracting from 80 documents (workers=3)...
+    [arterial_blood_gas] [10/80] 0.8 docs/sec, 13s elapsed
+    [arterial_blood_gas] ERROR doc 1323348_it: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [arterial_blood_gas] ERROR doc 1486650_it: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [arterial_blood_gas] ERROR doc 1526466_it: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [imaging_and_diagnostics] [10/80] 0.4 docs/sec, 26s elapsed
+    [arterial_blood_gas] [20/80] 0.7 docs/sec, 27s elapsed
+    [current_presentation] [10/80] 0.4 docs/sec, 27s elapsed
+    [arterial_blood_gas] ERROR doc 382962_it: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [arterial_blood_gas] ERROR doc 572916_it: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [arterial_blood_gas] ERROR doc 614605_it: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [arterial_blood_gas] [40/80] 0.8 docs/sec, 48s elapsed
+    [imaging_and_diagnostics] [20/80] 0.4 docs/sec, 52s elapsed
+    [arterial_blood_gas] ERROR doc 772892_it: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [arterial_blood_gas] ERROR doc 785051_it: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [current_presentation] [20/80] 0.4 docs/sec, 54s elapsed
+    [arterial_blood_gas] [50/80] 0.9 docs/sec, 58s elapsed
+    [arterial_blood_gas] [60/80] 0.9 docs/sec, 68s elapsed
+    [arterial_blood_gas] ERROR doc 1594790_it: 1 validation error for ArterialBloodGas
+  Input should be a valid dictionary or instance of ArterialBloodGas [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+    [imaging_and_diagnostics] [30/80] 0.4 docs/sec, 75s elapsed
+    [current_presentation] [30/80] 0.4 docs/sec, 76s elapsed
+    [arterial_blood_gas] [70/80] 0.9 docs/sec, 77s elapsed
+    [arterial_blood_gas] [80/80] 0.9 docs/sec, 86s elapsed
+    [arterial_blood_gas] Done: 86.2s (9 errors)
+    [imaging_and_diagnostics] [40/80] 0.4 docs/sec, 95s elapsed
+    [current_presentation] [40/80] 0.4 docs/sec, 99s elapsed
+    [imaging_and_diagnostics] [50/80] 0.4 docs/sec, 118s elapsed
+    [current_presentation] [50/80] 0.4 docs/sec, 124s elapsed
+    [imaging_and_diagnostics] [60/80] 0.4 docs/sec, 142s elapsed
+    [current_presentation] [60/80] 0.4 docs/sec, 144s elapsed
+    [imaging_and_diagnostics] [70/80] 0.4 docs/sec, 163s elapsed
+    [current_presentation] [70/80] 0.4 docs/sec, 165s elapsed
+    [current_presentation] [80/80] 0.4 docs/sec, 185s elapsed
+    [current_presentation] Done: 185.5s
+    [imaging_and_diagnostics] [80/80] 0.4 docs/sec, 188s elapsed
+    [imaging_and_diagnostics] Done: 188.5s
+
+============================================================
+  Parallel batch: acute_diagnoses, treatments, epilepsy_assessment
+============================================================
+
+[7/14] acute_diagnoses — extracting from 80 documents (workers=3)...
+
+[8/14] treatments — extracting from 80 documents (workers=3)...
+
+[9/14] epilepsy_assessment — extracting from 80 documents (workers=3)...
+    [epilepsy_assessment] [10/80] 0.4 docs/sec, 25s elapsed
+    [acute_diagnoses] [10/80] 0.3 docs/sec, 30s elapsed
+    [treatments] [10/80] 0.3 docs/sec, 32s elapsed
+    [epilepsy_assessment] [20/80] 0.5 docs/sec, 43s elapsed
+    [acute_diagnoses] [20/80] 0.4 docs/sec, 51s elapsed
+    [treatments] [20/80] 0.4 docs/sec, 54s elapsed
+    [epilepsy_assessment] [30/80] 0.5 docs/sec, 64s elapsed
+    [acute_diagnoses] [30/80] 0.4 docs/sec, 75s elapsed
+    [treatments] [30/80] 0.4 docs/sec, 79s elapsed
+    [epilepsy_assessment] [40/80] 0.5 docs/sec, 83s elapsed
+    [acute_diagnoses] [40/80] 0.4 docs/sec, 102s elapsed
+    [epilepsy_assessment] [50/80] 0.5 docs/sec, 102s elapsed
+    [treatments] [40/80] 0.4 docs/sec, 103s elapsed
+    [epilepsy_assessment] [60/80] 0.5 docs/sec, 123s elapsed
+    [acute_diagnoses] [50/80] 0.4 docs/sec, 125s elapsed
+    [treatments] [50/80] 0.4 docs/sec, 126s elapsed
+    [epilepsy_assessment] [70/80] 0.5 docs/sec, 145s elapsed
+    [acute_diagnoses] [60/80] 0.4 docs/sec, 156s elapsed
+    [treatments] [60/80] 0.4 docs/sec, 157s elapsed
+    [epilepsy_assessment] [80/80] 0.5 docs/sec, 174s elapsed
+    [epilepsy_assessment] Done: 173.8s
+    [treatments] [70/80] 0.4 docs/sec, 194s elapsed
+    [acute_diagnoses] [70/80] 0.4 docs/sec, 197s elapsed
+    [treatments] [80/80] 0.3 docs/sec, 232s elapsed
+    [treatments] Done: 232.5s
+    [acute_diagnoses] [80/80] 0.3 docs/sec, 238s elapsed
+    [acute_diagnoses] Done: 237.9s
+
+============================================================
+  Parallel batch: syncope_assessment, infection_screening, social_context
+============================================================
+
+[10/14] syncope_assessment — extracting from 80 documents (workers=3)...
+
+[11/14] infection_screening — extracting from 80 documents (workers=3)...
+
+[12/14] social_context — extracting from 80 documents (workers=3)...
+    [infection_screening] [10/80] 0.7 docs/sec, 14s elapsed
+    [social_context] [10/80] 0.6 docs/sec, 16s elapsed
+    [syncope_assessment] [10/80] 0.4 docs/sec, 22s elapsed
+    [infection_screening] ERROR doc 1486650_it: 3 validation errors for InfectionScreening
+influenza_and_infections
+  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='None', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+sars_cov2_swab_test
+  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='None', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+neurologist_consultation
+  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='None', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+    [social_context] [20/80] 0.7 docs/sec, 28s elapsed
+    [infection_screening] [20/80] 0.7 docs/sec, 30s elapsed
+    [social_context] [30/80] 0.8 docs/sec, 40s elapsed
+    [syncope_assessment] [20/80] 0.5 docs/sec, 40s elapsed
+    [infection_screening] [30/80] 0.7 docs/sec, 43s elapsed
+    [social_context] [40/80] 0.7 docs/sec, 59s elapsed
+    [infection_screening] [40/80] 0.7 docs/sec, 61s elapsed
+    [syncope_assessment] [30/80] 0.5 docs/sec, 66s elapsed
+    [social_context] [50/80] 0.7 docs/sec, 73s elapsed
+    [infection_screening] [50/80] 0.7 docs/sec, 76s elapsed
+    [social_context] [60/80] 0.7 docs/sec, 84s elapsed
+    [syncope_assessment] [40/80] 0.5 docs/sec, 84s elapsed
+    [infection_screening] [60/80] 0.7 docs/sec, 87s elapsed
+    [social_context] [70/80] 0.7 docs/sec, 95s elapsed
+    [infection_screening] [70/80] 0.7 docs/sec, 99s elapsed
+    [syncope_assessment] [50/80] 0.5 docs/sec, 102s elapsed
+    [social_context] [80/80] 0.7 docs/sec, 113s elapsed
+    [social_context] Done: 113.3s
+    [infection_screening] [80/80] 0.7 docs/sec, 119s elapsed
+    [infection_screening] Done: 118.9s (1 errors)
+    [syncope_assessment] [60/80] 0.5 docs/sec, 132s elapsed
+    [syncope_assessment] [70/80] 0.4 docs/sec, 161s elapsed
+    [syncope_assessment] [80/80] 0.4 docs/sec, 187s elapsed
+    [syncope_assessment] Done: 187.1s
+
+============================================================
+  Parallel batch: devices, outcome
+============================================================
+
+[13/14] devices — extracting from 80 documents (workers=3)...
+
+[14/14] outcome — extracting from 80 documents (workers=3)...
+    [devices] [10/80] 1.0 docs/sec, 10s elapsed
+    [outcome] [10/80] 0.7 docs/sec, 14s elapsed
+    [devices] [20/80] 1.0 docs/sec, 21s elapsed
+    [outcome] [20/80] 0.9 docs/sec, 23s elapsed
+    [devices] [30/80] 1.1 docs/sec, 28s elapsed
+    [outcome] [30/80] 0.8 docs/sec, 36s elapsed
+    [devices] [40/80] 1.0 docs/sec, 39s elapsed
+    [outcome] [40/80] 0.9 docs/sec, 45s elapsed
+    [devices] [50/80] 1.0 docs/sec, 49s elapsed
+    [outcome] [50/80] 0.9 docs/sec, 55s elapsed
+    [devices] [60/80] 1.0 docs/sec, 58s elapsed
+    [outcome] [60/80] 0.9 docs/sec, 68s elapsed
+    [devices] [70/80] 1.0 docs/sec, 69s elapsed
+    [outcome] [70/80] 0.9 docs/sec, 76s elapsed
+    [devices] [80/80] 1.0 docs/sec, 77s elapsed
+    [devices] Done: 76.8s
+    [outcome] [80/80] 0.9 docs/sec, 89s elapsed
+    [outcome] Done: 89.2s
+
+============================================================
+  Extraction complete!
+  Total calls: 1120
+  Total errors: 11
+  Total time: 990.2s (16.5 min)
+  Checkpoint: C:\Users\ulliv\Desktop\vinay\code\crf\checkpoints\checkpoint_openrouter_google_gemma-3-12b-it_it.json
+============================================================
+Submission saved: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\submission_openrouter_google_gemma-3-12b-it_it.jsonl
+  Documents: 80
+  Items per doc: 134
+
+============================================================
+  SCORING
+  Submission: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\submission_openrouter_google_gemma-3-12b-it_it.jsonl
+  Ground truth: C:\Users\ulliv\Desktop\vinay\code\crf\scoring_repo\development_data\dev_gt.jsonl
+  Language: it
+============================================================
+  Reference docs: 80
+  Submission docs: 80
+TP: 313, FP: 384, FN: 56
+
+  *** Macro-F1 = 0.6011 (60.11%) ***
+
+  Score saved: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\scores\submission_openrouter_google_gemma-3-12b-it_it_scores.json

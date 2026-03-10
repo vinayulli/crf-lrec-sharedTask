@@ -1,0 +1,223 @@
+
+############################################################
+  Processing: IT (DEV)
+############################################################
+Loaded 80 it documents from dev set
+
+Model:       openrouter/openai/gpt-4o-mini
+Language:    it
+Documents:   80
+CoT:         True
+Temperature: 0.0
+Workers:     3
+Par. Ext.:   3
+Optimized:   No
+Few-shot:    No
+
+Running extractors in parallel (batch size=3)...
+
+============================================================
+  Parallel batch: medical_history, vital_signs, lab_values
+============================================================
+
+[1/14] medical_history — extracting from 80 documents (workers=3)...
+
+[2/14] vital_signs — extracting from 80 documents (workers=3)...
+
+[3/14] lab_values — extracting from 80 documents (workers=3)...
+    [vital_signs] [10/80] 0.5 docs/sec, 20s elapsed
+    [lab_values] [10/80] 0.5 docs/sec, 22s elapsed
+    [medical_history] [10/80] 0.3 docs/sec, 33s elapsed
+    [vital_signs] [20/80] 0.6 docs/sec, 36s elapsed
+    [lab_values] [20/80] 0.5 docs/sec, 39s elapsed
+    [vital_signs] [30/80] 0.6 docs/sec, 50s elapsed
+    [lab_values] [30/80] 0.5 docs/sec, 57s elapsed
+    [medical_history] [20/80] 0.4 docs/sec, 57s elapsed
+    [vital_signs] [40/80] 0.6 docs/sec, 65s elapsed
+    [lab_values] [40/80] 0.5 docs/sec, 75s elapsed
+    [vital_signs] [50/80] 0.6 docs/sec, 83s elapsed
+    [medical_history] [30/80] 0.4 docs/sec, 84s elapsed
+    [lab_values] [50/80] 0.5 docs/sec, 92s elapsed
+    [vital_signs] [60/80] 0.6 docs/sec, 102s elapsed
+    [lab_values] [60/80] 0.5 docs/sec, 109s elapsed
+    [medical_history] [40/80] 0.3 docs/sec, 116s elapsed
+    [vital_signs] [70/80] 0.6 docs/sec, 124s elapsed
+    [lab_values] [70/80] 0.5 docs/sec, 129s elapsed
+    [vital_signs] [80/80] 0.6 docs/sec, 143s elapsed
+    [vital_signs] Done: 143.1s
+    [lab_values] [80/80] 0.5 docs/sec, 148s elapsed
+    [lab_values] Done: 148.3s
+    [medical_history] [50/80] 0.3 docs/sec, 152s elapsed
+    [medical_history] ERROR doc 1288360_it: 1 validation error for MedicalHistory
+neurodegenerative_diseases
+  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='certainly chronic', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+    [medical_history] [70/80] 0.3 docs/sec, 221s elapsed
+    [medical_history] ERROR doc 718917_it: 1 validation error for MedicalHistory
+neuropsychiatric_disorders
+  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='possibly chronic', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+    [medical_history] [80/80] 0.3 docs/sec, 254s elapsed
+    [medical_history] Done: 254.5s (2 errors)
+
+============================================================
+  Parallel batch: arterial_blood_gas, imaging_and_diagnostics, current_presentation
+============================================================
+
+[4/14] arterial_blood_gas — extracting from 80 documents (workers=3)...
+
+[5/14] imaging_and_diagnostics — extracting from 80 documents (workers=3)...
+
+[6/14] current_presentation — extracting from 80 documents (workers=3)...
+    [arterial_blood_gas] [10/80] 0.8 docs/sec, 12s elapsed
+    [arterial_blood_gas] [20/80] 1.0 docs/sec, 21s elapsed
+    [imaging_and_diagnostics] [10/80] 0.5 docs/sec, 22s elapsed
+    [current_presentation] [10/80] 0.5 docs/sec, 22s elapsed
+    [arterial_blood_gas] [30/80] 1.0 docs/sec, 30s elapsed
+    [imaging_and_diagnostics] [20/80] 0.5 docs/sec, 38s elapsed
+    [arterial_blood_gas] [40/80] 1.0 docs/sec, 38s elapsed
+    [current_presentation] [20/80] 0.5 docs/sec, 44s elapsed
+    [arterial_blood_gas] [50/80] 1.0 docs/sec, 48s elapsed
+    [imaging_and_diagnostics] [30/80] 0.5 docs/sec, 57s elapsed
+    [arterial_blood_gas] [60/80] 1.0 docs/sec, 57s elapsed
+    [current_presentation] [30/80] 0.5 docs/sec, 64s elapsed
+    [arterial_blood_gas] [70/80] 1.1 docs/sec, 66s elapsed
+    [imaging_and_diagnostics] [40/80] 0.5 docs/sec, 74s elapsed
+    [arterial_blood_gas] [80/80] 1.1 docs/sec, 76s elapsed
+    [arterial_blood_gas] Done: 75.9s
+    [current_presentation] [40/80] 0.5 docs/sec, 85s elapsed
+    [imaging_and_diagnostics] [50/80] 0.5 docs/sec, 91s elapsed
+    [current_presentation] [50/80] 0.5 docs/sec, 105s elapsed
+    [imaging_and_diagnostics] [60/80] 0.5 docs/sec, 113s elapsed
+    [current_presentation] [60/80] 0.5 docs/sec, 123s elapsed
+    [imaging_and_diagnostics] [70/80] 0.5 docs/sec, 130s elapsed
+    [current_presentation] [70/80] 0.5 docs/sec, 144s elapsed
+    [imaging_and_diagnostics] [80/80] 0.5 docs/sec, 148s elapsed
+    [imaging_and_diagnostics] Done: 148.0s
+    [current_presentation] [80/80] 0.5 docs/sec, 163s elapsed
+    [current_presentation] Done: 163.2s
+
+============================================================
+  Parallel batch: acute_diagnoses, treatments, epilepsy_assessment
+============================================================
+
+[7/14] acute_diagnoses — extracting from 80 documents (workers=3)...
+
+[8/14] treatments — extracting from 80 documents (workers=3)...
+
+[9/14] epilepsy_assessment — extracting from 80 documents (workers=3)...
+    [epilepsy_assessment] [10/80] 0.6 docs/sec, 17s elapsed
+    [acute_diagnoses] [10/80] 0.4 docs/sec, 24s elapsed
+    [treatments] [10/80] 0.4 docs/sec, 25s elapsed
+    [epilepsy_assessment] [20/80] 0.6 docs/sec, 33s elapsed
+    [acute_diagnoses] [20/80] 0.5 docs/sec, 43s elapsed
+    [epilepsy_assessment] [30/80] 0.6 docs/sec, 49s elapsed
+    [treatments] [20/80] 0.4 docs/sec, 49s elapsed
+    [acute_diagnoses] [30/80] 0.5 docs/sec, 66s elapsed
+    [epilepsy_assessment] [40/80] 0.6 docs/sec, 66s elapsed
+    [treatments] [30/80] 0.4 docs/sec, 73s elapsed
+    [epilepsy_assessment] [50/80] 0.6 docs/sec, 79s elapsed
+    [acute_diagnoses] [40/80] 0.5 docs/sec, 86s elapsed
+    [epilepsy_assessment] [60/80] 0.6 docs/sec, 94s elapsed
+    [treatments] [40/80] 0.4 docs/sec, 97s elapsed
+    [epilepsy_assessment] [70/80] 0.7 docs/sec, 107s elapsed
+    [acute_diagnoses] [50/80] 0.5 docs/sec, 109s elapsed
+    [epilepsy_assessment] [80/80] 0.7 docs/sec, 121s elapsed
+    [epilepsy_assessment] Done: 121.4s
+    [treatments] [50/80] 0.4 docs/sec, 123s elapsed
+    [acute_diagnoses] [60/80] 0.5 docs/sec, 133s elapsed
+    [treatments] [60/80] 0.4 docs/sec, 148s elapsed
+    [acute_diagnoses] [70/80] 0.4 docs/sec, 162s elapsed
+    [treatments] [70/80] 0.4 docs/sec, 177s elapsed
+    [acute_diagnoses] [80/80] 0.4 docs/sec, 180s elapsed
+    [acute_diagnoses] Done: 180.0s
+    [treatments] [80/80] 0.4 docs/sec, 206s elapsed
+    [treatments] Done: 206.5s
+
+============================================================
+  Parallel batch: syncope_assessment, infection_screening, social_context
+============================================================
+
+[10/14] syncope_assessment — extracting from 80 documents (workers=3)...
+
+[11/14] infection_screening — extracting from 80 documents (workers=3)...
+
+[12/14] social_context — extracting from 80 documents (workers=3)...
+    [social_context] [10/80] 1.0 docs/sec, 10s elapsed
+    [syncope_assessment] [10/80] 0.7 docs/sec, 15s elapsed
+    [infection_screening] [10/80] 0.6 docs/sec, 16s elapsed
+    [social_context] [20/80] 1.2 docs/sec, 17s elapsed
+    [social_context] [30/80] 1.3 docs/sec, 24s elapsed
+    [infection_screening] [20/80] 0.7 docs/sec, 29s elapsed
+    [social_context] [40/80] 1.3 docs/sec, 30s elapsed
+    [syncope_assessment] [20/80] 0.6 docs/sec, 33s elapsed
+    [social_context] [50/80] 1.3 docs/sec, 38s elapsed
+    [infection_screening] [30/80] 0.8 docs/sec, 39s elapsed
+    [syncope_assessment] [30/80] 0.7 docs/sec, 43s elapsed
+    [social_context] [60/80] 1.3 docs/sec, 45s elapsed
+    [infection_screening] [40/80] 0.8 docs/sec, 48s elapsed
+    [social_context] [70/80] 1.4 docs/sec, 52s elapsed
+    [syncope_assessment] [40/80] 0.7 docs/sec, 55s elapsed
+    [infection_screening] [50/80] 0.8 docs/sec, 59s elapsed
+    [social_context] [80/80] 1.3 docs/sec, 60s elapsed
+    [social_context] Done: 59.6s
+    [syncope_assessment] [50/80] 0.8 docs/sec, 66s elapsed
+    [infection_screening] [60/80] 0.9 docs/sec, 68s elapsed
+    [infection_screening] [70/80] 0.9 docs/sec, 77s elapsed
+    [syncope_assessment] [60/80] 0.8 docs/sec, 79s elapsed
+    [infection_screening] [80/80] 0.9 docs/sec, 87s elapsed
+    [infection_screening] Done: 87.1s
+    [syncope_assessment] [70/80] 0.8 docs/sec, 93s elapsed
+    [syncope_assessment] [80/80] 0.8 docs/sec, 105s elapsed
+    [syncope_assessment] Done: 104.8s
+
+============================================================
+  Parallel batch: devices, outcome
+============================================================
+
+[13/14] devices — extracting from 80 documents (workers=3)...
+
+[14/14] outcome — extracting from 80 documents (workers=3)...
+    [devices] [10/80] 1.3 docs/sec, 8s elapsed
+    [outcome] [10/80] 0.9 docs/sec, 11s elapsed
+    [devices] [20/80] 1.4 docs/sec, 14s elapsed
+    [outcome] [20/80] 1.0 docs/sec, 20s elapsed
+    [devices] [30/80] 1.4 docs/sec, 22s elapsed
+    [devices] [40/80] 1.4 docs/sec, 29s elapsed
+    [outcome] [30/80] 1.0 docs/sec, 30s elapsed
+    [devices] [50/80] 1.4 docs/sec, 37s elapsed
+    [outcome] [40/80] 1.0 docs/sec, 39s elapsed
+    [devices] [60/80] 1.3 docs/sec, 45s elapsed
+    [outcome] [50/80] 1.0 docs/sec, 49s elapsed
+    [devices] [70/80] 1.4 docs/sec, 51s elapsed
+    [devices] [80/80] 1.4 docs/sec, 58s elapsed
+    [devices] Done: 58.3s
+    [outcome] [60/80] 1.0 docs/sec, 59s elapsed
+    [outcome] [70/80] 1.0 docs/sec, 69s elapsed
+    [outcome] [80/80] 1.0 docs/sec, 80s elapsed
+    [outcome] Done: 80.2s
+
+============================================================
+  Extraction complete!
+  Total calls: 1120
+  Total errors: 2
+  Total time: 809.3s (13.5 min)
+  Checkpoint: C:\Users\ulliv\Desktop\vinay\code\crf\checkpoints\checkpoint_openrouter_openai_gpt-4o-mini_it.json
+============================================================
+Submission saved: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\submission_openrouter_openai_gpt-4o-mini_it.jsonl
+  Documents: 80
+  Items per doc: 134
+
+============================================================
+  SCORING
+  Submission: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\submission_openrouter_openai_gpt-4o-mini_it.jsonl
+  Ground truth: C:\Users\ulliv\Desktop\vinay\code\crf\scoring_repo\development_data\dev_gt.jsonl
+  Language: it
+============================================================
+  Reference docs: 80
+  Submission docs: 80
+TP: 285, FP: 255, FN: 86
+
+  *** Macro-F1 = 0.6575 (65.75%) ***
+
+  Score saved: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\scores\submission_openrouter_openai_gpt-4o-mini_it_scores.json

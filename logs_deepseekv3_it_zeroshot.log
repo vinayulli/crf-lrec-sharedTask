@@ -1,0 +1,216 @@
+
+############################################################
+  Processing: IT (DEV)
+############################################################
+Loaded 80 it documents from dev set
+
+Model:       openrouter/deepseek/deepseek-chat-v3-0324
+Language:    it
+Documents:   80
+CoT:         True
+Temperature: 0.0
+Workers:     3
+Par. Ext.:   3
+Optimized:   No
+Few-shot:    No
+
+Running extractors in parallel (batch size=3)...
+
+============================================================
+  Parallel batch: medical_history, vital_signs, lab_values
+============================================================
+
+[1/14] medical_history — extracting from 80 documents (workers=3)...
+
+[2/14] vital_signs — extracting from 80 documents (workers=3)...
+
+[3/14] lab_values — extracting from 80 documents (workers=3)...
+    [vital_signs] [10/80] 0.3 docs/sec, 34s elapsed
+    [lab_values] [10/80] 0.2 docs/sec, 46s elapsed
+    [medical_history] [10/80] 0.2 docs/sec, 55s elapsed
+    [vital_signs] [20/80] 0.3 docs/sec, 60s elapsed
+    [lab_values] [20/80] 0.3 docs/sec, 77s elapsed
+    [vital_signs] [30/80] 0.4 docs/sec, 79s elapsed
+    [medical_history] [20/80] 0.2 docs/sec, 86s elapsed
+    [vital_signs] [40/80] 0.4 docs/sec, 101s elapsed
+    [lab_values] [30/80] 0.3 docs/sec, 112s elapsed
+    [vital_signs] [50/80] 0.4 docs/sec, 120s elapsed
+    [medical_history] [30/80] 0.2 docs/sec, 128s elapsed
+    [lab_values] [40/80] 0.3 docs/sec, 137s elapsed
+    [vital_signs] [60/80] 0.4 docs/sec, 143s elapsed
+    [medical_history] [40/80] 0.3 docs/sec, 158s elapsed
+    [lab_values] [50/80] 0.3 docs/sec, 165s elapsed
+    [vital_signs] [70/80] 0.4 docs/sec, 170s elapsed
+    [lab_values] [60/80] 0.3 docs/sec, 192s elapsed
+    [vital_signs] [80/80] 0.4 docs/sec, 196s elapsed
+    [vital_signs] Done: 196.4s
+    [medical_history] [50/80] 0.2 docs/sec, 204s elapsed
+    [lab_values] [70/80] 0.3 docs/sec, 217s elapsed
+    [medical_history] [60/80] 0.3 docs/sec, 237s elapsed
+    [lab_values] [80/80] 0.3 docs/sec, 246s elapsed
+    [lab_values] Done: 246.2s
+    [medical_history] [70/80] 0.3 docs/sec, 269s elapsed
+    [medical_history] [80/80] 0.3 docs/sec, 308s elapsed
+    [medical_history] Done: 307.9s
+
+============================================================
+  Parallel batch: arterial_blood_gas, imaging_and_diagnostics, current_presentation
+============================================================
+
+[4/14] arterial_blood_gas — extracting from 80 documents (workers=3)...
+
+[5/14] imaging_and_diagnostics — extracting from 80 documents (workers=3)...
+
+[6/14] current_presentation — extracting from 80 documents (workers=3)...
+    [arterial_blood_gas] [10/80] 0.7 docs/sec, 15s elapsed
+    [arterial_blood_gas] [20/80] 0.7 docs/sec, 28s elapsed
+    [imaging_and_diagnostics] [10/80] 0.3 docs/sec, 30s elapsed
+    [current_presentation] [10/80] 0.3 docs/sec, 36s elapsed
+    [arterial_blood_gas] [30/80] 0.7 docs/sec, 43s elapsed
+    [imaging_and_diagnostics] [20/80] 0.4 docs/sec, 54s elapsed
+    [arterial_blood_gas] [40/80] 0.7 docs/sec, 58s elapsed
+    [arterial_blood_gas] [50/80] 0.7 docs/sec, 73s elapsed
+    [current_presentation] [20/80] 0.3 docs/sec, 74s elapsed
+    [arterial_blood_gas] [60/80] 0.7 docs/sec, 90s elapsed
+    [imaging_and_diagnostics] [30/80] 0.3 docs/sec, 91s elapsed
+    [arterial_blood_gas] [70/80] 0.7 docs/sec, 104s elapsed
+    [current_presentation] [30/80] 0.3 docs/sec, 106s elapsed
+    [imaging_and_diagnostics] [40/80] 0.3 docs/sec, 121s elapsed
+    [arterial_blood_gas] [80/80] 0.7 docs/sec, 122s elapsed
+    [arterial_blood_gas] Done: 122.5s
+    [current_presentation] [40/80] 0.3 docs/sec, 138s elapsed
+    [imaging_and_diagnostics] [50/80] 0.3 docs/sec, 149s elapsed
+    [current_presentation] [50/80] 0.3 docs/sec, 178s elapsed
+    [imaging_and_diagnostics] [60/80] 0.3 docs/sec, 191s elapsed
+    [current_presentation] [60/80] 0.3 docs/sec, 213s elapsed
+    [imaging_and_diagnostics] [70/80] 0.3 docs/sec, 222s elapsed
+    [current_presentation] [70/80] 0.3 docs/sec, 254s elapsed
+    [imaging_and_diagnostics] [80/80] 0.3 docs/sec, 256s elapsed
+    [imaging_and_diagnostics] Done: 255.9s
+    [current_presentation] [80/80] 0.3 docs/sec, 290s elapsed
+    [current_presentation] Done: 290.0s
+
+============================================================
+  Parallel batch: acute_diagnoses, treatments, epilepsy_assessment
+============================================================
+
+[7/14] acute_diagnoses — extracting from 80 documents (workers=3)...
+
+[8/14] treatments — extracting from 80 documents (workers=3)...
+
+[9/14] epilepsy_assessment — extracting from 80 documents (workers=3)...
+    [acute_diagnoses] [10/80] 0.4 docs/sec, 27s elapsed
+    [epilepsy_assessment] [10/80] 0.3 docs/sec, 31s elapsed
+    [treatments] [10/80] 0.3 docs/sec, 39s elapsed
+    [epilepsy_assessment] [20/80] 0.4 docs/sec, 55s elapsed
+    [acute_diagnoses] [20/80] 0.3 docs/sec, 61s elapsed
+    [epilepsy_assessment] [30/80] 0.4 docs/sec, 80s elapsed
+    [treatments] [20/80] 0.2 docs/sec, 81s elapsed
+    [acute_diagnoses] [30/80] 0.3 docs/sec, 90s elapsed
+    [epilepsy_assessment] [40/80] 0.4 docs/sec, 105s elapsed
+    [treatments] [30/80] 0.3 docs/sec, 115s elapsed
+    [acute_diagnoses] [40/80] 0.3 docs/sec, 117s elapsed
+    [epilepsy_assessment] [50/80] 0.4 docs/sec, 125s elapsed
+    [epilepsy_assessment] [60/80] 0.4 docs/sec, 148s elapsed
+    [treatments] [40/80] 0.3 docs/sec, 148s elapsed
+    [acute_diagnoses] [50/80] 0.3 docs/sec, 150s elapsed
+    [epilepsy_assessment] [70/80] 0.4 docs/sec, 173s elapsed
+    [treatments] [50/80] 0.3 docs/sec, 181s elapsed
+    [acute_diagnoses] [60/80] 0.3 docs/sec, 193s elapsed
+    [epilepsy_assessment] [80/80] 0.4 docs/sec, 201s elapsed
+    [epilepsy_assessment] Done: 200.6s
+    [acute_diagnoses] [70/80] 0.3 docs/sec, 228s elapsed
+    [treatments] [60/80] 0.3 docs/sec, 233s elapsed
+    [acute_diagnoses] [80/80] 0.3 docs/sec, 268s elapsed
+    [acute_diagnoses] Done: 268.2s
+    [treatments] [70/80] 0.3 docs/sec, 275s elapsed
+    [treatments] [80/80] 0.3 docs/sec, 316s elapsed
+    [treatments] Done: 316.4s
+
+============================================================
+  Parallel batch: syncope_assessment, infection_screening, social_context
+============================================================
+
+[10/14] syncope_assessment — extracting from 80 documents (workers=3)...
+
+[11/14] infection_screening — extracting from 80 documents (workers=3)...
+
+[12/14] social_context — extracting from 80 documents (workers=3)...
+    [social_context] [10/80] 0.7 docs/sec, 14s elapsed
+    [infection_screening] [10/80] 0.5 docs/sec, 18s elapsed
+    [syncope_assessment] [10/80] 0.4 docs/sec, 22s elapsed
+    [social_context] [20/80] 0.7 docs/sec, 29s elapsed
+    [infection_screening] [20/80] 0.6 docs/sec, 36s elapsed
+    [syncope_assessment] [20/80] 0.5 docs/sec, 43s elapsed
+    [social_context] [30/80] 0.7 docs/sec, 44s elapsed
+    [social_context] [40/80] 0.7 docs/sec, 57s elapsed
+    [infection_screening] [30/80] 0.5 docs/sec, 58s elapsed
+    [syncope_assessment] [30/80] 0.5 docs/sec, 67s elapsed
+    [infection_screening] [40/80] 0.5 docs/sec, 73s elapsed
+    [social_context] [50/80] 0.7 docs/sec, 75s elapsed
+    [syncope_assessment] [40/80] 0.5 docs/sec, 86s elapsed
+    [infection_screening] [50/80] 0.5 docs/sec, 92s elapsed
+    [social_context] [60/80] 0.7 docs/sec, 92s elapsed
+    [social_context] [70/80] 0.7 docs/sec, 106s elapsed
+    [infection_screening] [60/80] 0.6 docs/sec, 108s elapsed
+    [syncope_assessment] [50/80] 0.5 docs/sec, 108s elapsed
+    [social_context] [80/80] 0.7 docs/sec, 122s elapsed
+    [social_context] Done: 121.7s
+    [infection_screening] [70/80] 0.6 docs/sec, 125s elapsed
+    [syncope_assessment] [60/80] 0.5 docs/sec, 130s elapsed
+    [syncope_assessment] [70/80] 0.5 docs/sec, 148s elapsed
+    [infection_screening] [80/80] 0.5 docs/sec, 148s elapsed
+    [infection_screening] Done: 148.5s
+    [syncope_assessment] [80/80] 0.5 docs/sec, 167s elapsed
+    [syncope_assessment] Done: 166.8s
+
+============================================================
+  Parallel batch: devices, outcome
+============================================================
+
+[13/14] devices — extracting from 80 documents (workers=3)...
+
+[14/14] outcome — extracting from 80 documents (workers=3)...
+    [devices] [10/80] 0.7 docs/sec, 14s elapsed
+    [outcome] [10/80] 0.7 docs/sec, 15s elapsed
+    [devices] [20/80] 0.8 docs/sec, 24s elapsed
+    [outcome] [20/80] 0.7 docs/sec, 28s elapsed
+    [devices] [30/80] 0.8 docs/sec, 36s elapsed
+    [outcome] [30/80] 0.7 docs/sec, 43s elapsed
+    [devices] [40/80] 0.8 docs/sec, 48s elapsed
+    [outcome] [40/80] 0.7 docs/sec, 55s elapsed
+    [devices] [50/80] 0.9 docs/sec, 57s elapsed
+    [outcome] [50/80] 0.7 docs/sec, 67s elapsed
+    [devices] [60/80] 0.9 docs/sec, 69s elapsed
+    [outcome] [60/80] 0.7 docs/sec, 83s elapsed
+    [devices] [70/80] 0.8 docs/sec, 84s elapsed
+    [outcome] [70/80] 0.7 docs/sec, 97s elapsed
+    [devices] [80/80] 0.8 docs/sec, 98s elapsed
+    [devices] Done: 97.6s
+    [outcome] [80/80] 0.7 docs/sec, 111s elapsed
+    [outcome] Done: 111.4s
+
+============================================================
+  Extraction complete!
+  Total calls: 1120
+  Total errors: 0
+  Total time: 1192.6s (19.9 min)
+  Checkpoint: C:\Users\ulliv\Desktop\vinay\code\crf\checkpoints\checkpoint_openrouter_deepseek_deepseek-chat-v3-0324_it.json
+============================================================
+Submission saved: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\submission_openrouter_deepseek_deepseek-chat-v3-0324_it.jsonl
+  Documents: 80
+  Items per doc: 134
+
+============================================================
+  SCORING
+  Submission: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\submission_openrouter_deepseek_deepseek-chat-v3-0324_it.jsonl
+  Ground truth: C:\Users\ulliv\Desktop\vinay\code\crf\scoring_repo\development_data\dev_gt.jsonl
+  Language: it
+============================================================
+  Reference docs: 80
+  Submission docs: 80
+TP: 323, FP: 290, FN: 56
+
+  *** Macro-F1 = 0.6702 (67.02%) ***
+
+  Score saved: C:\Users\ulliv\Desktop\vinay\code\crf\submissions\scores\submission_openrouter_deepseek_deepseek-chat-v3-0324_it_scores.json
